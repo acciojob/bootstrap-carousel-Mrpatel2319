@@ -1,13 +1,74 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Carousel</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 </head>
 <body>
-    <!-- Write your code here -->
-    <!-- Bootstrap Bundle with Popper -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <!-- Carousel Container -->
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+      <li data-target="#myCarousel" data-slide-to="4"></li>
+    </ol>
+
+    <!-- Slides -->
+    <div class="carousel-inner">
+      <div class="item first-slide">
+        <img src="https://via.placeholder.com/800x400" alt="First Slide">
+        <div class="carousel-caption">
+          <h3>First Slide</h3>
+          <p>First slide description.</p>
+        </div>
+      </div>
+      <div class="item second-slide">
+        <img src="https://via.placeholder.com/800x400" alt="Second Slide">
+        <div class="carousel-caption">
+          <h3>Second Slide</h3>
+          <p>Second slide description.</p>
+        </div>
+      </div>
+      <div class="item active third-slide">
+        <img src="https://via.placeholder.com/800x400" alt="Third Slide">
+        <div class="carousel-caption">
+          <h3>Third Slide</h3>
+          <p>Third slide description.</p>
+        </div>
+      </div>
+      <div class="item fourth-slide">
+        <img src="https://via.placeholder.com/800x400" alt="Fourth Slide">
+        <div class="carousel-caption">
+          <h3>Fourth Slide</h3>
+          <p>Fourth slide description.</p>
+        </div>
+      </div>
+      <div class="item fifth-slide">
+        <img src="https://via.placeholder.com/800x400" alt="Fifth Slide">
+        <div class="carousel-caption">
+          <h3>Fifth Slide</h3>
+          <p>Fifth slide description.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Left and Right Controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+    </a>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </body>
- 
 </html>
